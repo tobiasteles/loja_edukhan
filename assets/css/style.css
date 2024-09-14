@@ -33,7 +33,7 @@ body {
 .container {
     max-width: 1300px;
     margin: auto;
-    padding-left: 25px;
+    padding-left: 50px;
     padding-right: 25px;
 }
 
@@ -141,6 +141,8 @@ p {
     flex-basis: 25%;
     min-width: 200px;
     padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 50px;
     transition: transform 0.5s;
 }
