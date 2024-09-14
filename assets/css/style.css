@@ -127,7 +127,7 @@ p {
 
 .col-3 {
     flex-basis: 30%;
-    max-width: 250px;
+    min-width: 250px;
     margin-bottom: 30px;
 }
 
@@ -139,7 +139,7 @@ p {
 
 .col-4 {
     flex-basis: 25%;
-    max-width: 200px;
+    min-width: 200px;
     padding: 10px;
     margin-bottom: 50px;
     transition: transform 0.5s;
@@ -238,12 +238,12 @@ small {
 }
 
 .depoimentos .col-3 h3 {
-font-size: 16px;
-font-weight: 600;
-color: var(--cor-fonte-corpo);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-fonte-corpo);
 }
 
-.marcas{
+.marcas {
     margin: 100px auto;
 
 }
@@ -251,13 +251,113 @@ color: var(--cor-fonte-corpo);
 .col-5 {
     width: 160px;
 }
-.col-5 img{
+
+.col-5 img {
     width: 100%;
     cursor: pointer;
     filter: grayscale(100%);
 }
 
-.col-5 img:hover{
+.col-5 img:hover {
     filter: grayscale(0%);
 }
 
+.rodape {
+    background: var(--cor-btn-fonte);
+    color: var(--cor-fonte-p);
+    padding: 60px 0 20px;
+    font-size: 14px;
+}
+
+.rodape p {
+    color: var(--cor-btn-hover);
+}
+
+.rodape h3 {
+    color: var(--cor-padrao);
+    margin-bottom: 20px;
+}
+
+.rodape-col-1,
+.rodape-col-2 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.rodape-col-1,
+.rodape-col-2 {
+    flex-basis: 12%;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.rodape hr {
+    border: none;
+    height: 1px;
+    background: var(--cor-fonte-p);
+    margin: 20px 0;
+}
+
+.direitos {
+    text-align: center;
+    color: var(--cor-padrao);
+}
+
+.menu-celular {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+@media only screen and (max-width:800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: var(--cor-fonte-corpo);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: var(--cor-fonte-corpo-leve);
+    }
+
+    .menu-celular {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .linha {
+        text-align: center;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+    .col-2 h1{
+        font-size: 27px;
+    }
+    .rodape-col-1, .rodape-col-2{
+        text-align: center;
+    }
+
+    .col-4 p {
+        font-size: 24px;
+    }
+}
