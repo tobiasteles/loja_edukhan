@@ -325,14 +325,16 @@ ul {
 .linha2 {
     margin: 100px auto 50px;
     justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-.linha2 select{
+.linha2 select {
     padding: 5px;
     border: 1px solid var(--cor-padrao);
 }
 
-.linha select:focus{
+.linha select:focus {
     outline: none;
 }
 
@@ -351,10 +353,82 @@ ul {
     cursor: pointer;
 }
 
-.paginacao span:hover{
+.paginacao span:hover {
     background: var(--cor-padrao);
     color: var(--cor-fonte-p);
 }
+
+.ver-produto {
+    margin-top: 40px;
+}
+
+.ver-produto .col-2 img {
+    width: 100%;
+    padding: 0;
+}
+
+.ver-produto #produtoImg {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+}
+.ver-produto .col-2 {
+    padding: 20px;
+}
+
+.ver-produto h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ver-produto select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid var(--cor-padrao);
+}
+
+.ver-produto select:focus{
+    outline: none;
+}
+
+.ver-produto input{
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid var(--cor-padrao);
+}
+
+.ver-produto input:focus{
+    outline: none;
+}
+
+.ver-produto .btn {
+    border: none;
+    height: 42px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ver-produto p {
+    font-size: 15px;
+}
+
+.img-linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+
 
 /*--------------CELULAR-----------------*/
 @media only screen and (max-width:800px) {
@@ -416,4 +490,18 @@ ul {
     .novoMenu nav ul li a {
         color: var(--cor-padrao);
     }
+
+    .ver-produto .col-2 {
+        margin: 20px 0;
+    }
+
+    .ver-produto .linha{
+        text-align: left;
+    }
+
+    .ver-produto h1{
+        font-size: 26px;
+        line-height: 26px;
+    }
+
 }
