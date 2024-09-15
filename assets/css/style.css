@@ -314,6 +314,49 @@ ul {
     display: none;
 }
 
+.novoMenu nav ul li a {
+    color: var(--cor-padrao);
+}
+
+.novoMenu {
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.linha2 {
+    margin: 100px auto 50px;
+    justify-content: space-between;
+}
+
+.linha2 select{
+    padding: 5px;
+    border: 1px solid var(--cor-padrao);
+}
+
+.linha select:focus{
+    outline: none;
+}
+
+.paginacao {
+    margin: 0 auto 80px;
+}
+
+.paginacao span {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid var(--cor-padrao);
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.paginacao span:hover{
+    background: var(--cor-padrao);
+    color: var(--cor-fonte-p);
+}
+
+/*--------------CELULAR-----------------*/
 @media only screen and (max-width:800px) {
     nav ul {
         position: absolute;
@@ -340,6 +383,10 @@ ul {
         display: block;
         cursor: pointer;
     }
+
+    .novoMenu nav ul li a {
+        color: var(--cor-padrao);
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -352,14 +399,21 @@ ul {
     .col-4 {
         flex-basis: 100%;
     }
-    .col-2 h1{
+
+    .col-2 h1 {
         font-size: 27px;
     }
-    .rodape-col-1, .rodape-col-2{
+
+    .rodape-col-1,
+    .rodape-col-2 {
         text-align: center;
     }
 
     .col-4 p {
         font-size: 24px;
+    }
+
+    .novoMenu nav ul li a {
+        color: var(--cor-padrao);
     }
 }
