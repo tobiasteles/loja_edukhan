@@ -492,6 +492,90 @@ th:last-child {
     text-align: right;
 }
 
+.minha-conta {
+    padding: 50px 0;
+    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+}
+
+.formulario {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    background-color: var(--cor-fonte);
+    box-shadow: 30px 0 20px 0 rgba(0, 0, 0, 0.1);
+    /*overflow: hidden;*/
+
+}
+
+.formulario span {
+    display: inline-block;
+    width: 100px;
+    padding: 0 10px;
+    font-weight: bold;
+    color: var(--cor-fonte-corpo);
+    cursor: pointer;
+}
+
+.btn-form {
+    display: inline-block;
+}
+
+.formulario form {
+    position: absolute;
+    top: 110px;
+    width: 300px;
+    padding: 0 20px;
+}
+
+.formulario form input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid var(--cor-padrao);
+    border-radius: 3px;
+
+}
+
+.formulario form .btn {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--cor-padrao);
+    cursor: pointer;
+}
+
+.formulario form .btn:hover{
+    background-color: var(--cor-btn-hover);
+}
+
+.formulario form a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--cor-fonte-corpo);
+    cursor: pointer;
+}
+
+#EntrarPainel {
+    left: -300px;
+}
+
+#CadastroSite {
+    left: 0;
+}
+
+#indicador {
+    width: 100px;
+    height: 3px;
+    border: none;
+    background-color: var(--cor-padrao);
+    margin-top: 8px;
+}
+
 /*--------------CELULAR-----------------*/
 @media only screen and (max-width:800px) {
     nav ul {
