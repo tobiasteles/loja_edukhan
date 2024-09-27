@@ -506,7 +506,7 @@ th:last-child {
     margin: auto;
     background-color: var(--cor-fonte);
     box-shadow: 30px 0 20px 0 rgba(0, 0, 0, 0.1);
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .formulario span {
